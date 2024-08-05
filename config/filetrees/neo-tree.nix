@@ -8,7 +8,7 @@
     closeIfLastWindow = true;
     popupBorderStyle = "rounded"; # Type: null or one of “NC”, “double”, “none”, “rounded”, “shadow”, “single”, “solid” or raw lua code
     buffers = {
-      bindToCwd = false;
+      bindToCwd = true;
       followCurrentFile = {
         enabled = true;
       };
@@ -16,7 +16,7 @@
     window = {
       width = 40;
       height = 15;
-      autoExpandWidth = false;
+      autoExpandWidth = true;
       mappings = {
         "<space>" = "none";
       };

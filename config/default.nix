@@ -23,9 +23,7 @@
     ./git/lazygit.nix
     # ./git/neogit.nix
 
-    ./languages/nvim-jdtls.nix
     ./languages/nvim-lint.nix
-    ./languages/typescript-tools-nvim.nix
     ./languages/treesitter/treesitter.nix
     ./languages/treesitter/treesitter-context.nix
     ./languages/treesitter/treesitter-textobjects.nix
@@ -57,7 +55,6 @@
     ./ui/nui.nix
 
     ./utils/better-escape.nix
-    ./utils/neocord.nix
     ./utils/hardtime.nix
     ./utils/harpoon.nix
     ./utils/illuminate.nix
