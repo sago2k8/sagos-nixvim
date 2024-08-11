@@ -4,12 +4,11 @@
     ./sets.nix
     ./keymaps.nix
 
-    ./bufferlines/bufferline.nix
-
     ./colorschemes/base16.nix
     ./colorschemes/catppuccin.nix
     ./colorschemes/rose-pine.nix
     ./colorschemes/kanagawa.nix
+    ./colorschemes/nightfox.nix
 
     ./completion/cmp.nix
     ./completion/copilot.nix
@@ -38,12 +37,9 @@
 
     ./none-ls/none-ls.nix
 
-    ./pluginmanagers/lazy.nix
-
     ./snippets/luasnip.nix
 
     ./statusline/lualine.nix
-    ./statusline/staline.nix
 
     ./telescope/telescope.nix
 
@@ -63,7 +59,6 @@
     ./utils/neodev.nix
     ./utils/neotest.nix
     ./utils/nvim-autopairs.nix
-    ./utils/nvim-colorizer.nix
     ./utils/nvim-surround.nix
     ./utils/oil.nix
     ./utils/persistence.nix
@@ -73,10 +68,7 @@
     ./utils/tmux-navigator.nix
     ./utils/todo-comments.nix
     ./utils/toggleterm.nix
-    ./utils/ultimate-autopair.nix
     ./utils/undotree.nix
-    ./utils/wakatime.nix
     ./utils/whichkey.nix
-    ./utils/wilder.nix
   ];
 }

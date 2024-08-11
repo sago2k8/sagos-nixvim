@@ -5,96 +5,36 @@
     };
     lsp = {
       enable = true;
-      capabilities = "offsetEncoding =  'utf-16'";
       servers = {
-        ansiblels.enable = true;
-        bashls.enable = true;
-        cssls.enable = true;
-        docker-compose-language-service.enable = true;
-        dockerls.enable = true;
-        gopls.enable = true;
-        helm-ls.enable = true;
-        html.enable = true;
-        java-language-server.enable = true;
-        jsonls.enable = true;
-        nginx-language-server.enable = true;
-        nixd.enable = true;
-        sqls.enable = true;
-        terraformls.enable = true;
-        yamlls.enable = true;
-        elixirls.enable = true;
-        gleam.enable = true;
-        clangd = {enable = true;};
+        # Average webdev LSPs
+        tsserver.enable = true; # TS/JS
+        cssls.enable = true; # CSS
+        tailwindcss.enable = true; # TailwindCSS
+        html.enable = true; # HTML
+        astro.enable = true; # AstroJS
+        phpactor.enable = true; # PHP
+        svelte.enable = false; # Svelte
+        vuels.enable = false; # Vue
+        pyright.enable = true; # Python
+        marksman.enable = true; # Markdown
+        nil-ls.enable = true; # Nix
+        dockerls.enable = true; # Docker
+        bashls.enable = true; # Bash
+        clangd.enable = false; # C/C++
+        csharp-ls.enable = true; # C#
+        yamlls.enable = true; # YAML
+        gopls.enable = true; #go
         lua-ls = {
+          # Lua
           enable = true;
-          extraOptions = {
-            settings = {
-              Lua = {
-                completion = {
-                  callSnippet = "Replace";
-                };
-                telemetry = {
-                  enabled = false;
-                };
-                hint = {enable = true;};
-              };
-            };
-          };
+          settings.telemetry.enable = false;
         };
-        nil-ls = {enable = true;};
-        tsserver = {
-          enable = false;
-          filetypes = ["javascript" "javascriptreact" "typescript" "typescriptreact"];
-          extraOptions = {
-            settings = {
-              javascript = {
-                inlayHints = {
-                  includeInlayEnumMemberValueHints = true;
-                  includeInlayFunctionLikeReturnTypeHints = true;
-                  includeInlayFunctionParameterTypeHints = true;
-                  includeInlayParameterNameHints = "all";
-                  includeInlayParameterNameHintsWhenArgumentMatchesName = true;
-                  includeInlayPropertyDeclarationTypeHints = true;
-                  includeInlayVariableTypeHints = true;
-                };
-              };
-              typescript = {
-                inlayHints = {
-                  includeInlayEnumMemberValueHints = true;
-                  includeInlayFunctionLikeReturnTypeHints = true;
-                  includeInlayFunctionParameterTypeHints = true;
-                  includeInlayParameterNameHints = "all";
-                  includeInlayParameterNameHintsWhenArgumentMatchesName = true;
-                  includeInlayPropertyDeclarationTypeHints = true;
-                  includeInlayVariableTypeHints = true;
-                };
-              };
-            };
-          };
-        };
-        eslint = {enable = true;};
-        pyright = {enable = true;};
-        ruff-lsp = {enable = true;};
 
+        # Rust
         rust-analyzer = {
           enable = true;
-          installCargo = true;
           installRustc = true;
-          settings = {
-            checkOnSave = true;
-            check = {
-              command = "clippy";
-            };
-            # inlayHints = {
-            #   enable = true;
-            #   showParameterNames = true;
-            #   parameterHintsPrefix = "<- ";
-            #   otherHintsPrefix = "=> ";
-            # };
-            procMacro = {
-              enable = true;
-            };
-          };
+          installCargo = true;
         };
       };
       keymaps = {
@@ -180,5 +120,7 @@
     require('lspconfig.ui.windows').default_options = {
       border = _border
     }
-    '';
+
+    require'lspconfig'.bufls.setup{}
+  '';
 }
