@@ -1,5 +1,7 @@
 {
-  description = "Neve is a Neovim configuration built with Nixvim, which allows you to use Nix language to manage Neovim plugins/options";
+  description = "Sagos's nix is a Neovim configuration built with Nixvim, which
+  allows you to use Nix language to manage Neovim plugins/options originally
+  forked from Neve";
 
   inputs = {
     nixvim.url = "github:nix-community/nixvim";
@@ -32,7 +34,7 @@
         # Run `nix flake check .` to verify that your config is not broken
         default = nixvimLib.check.mkTestDerivationFromNvim {
           inherit nvim;
-          name = "Neve";
+          name = "nixvim-config";
         };
       };
 
