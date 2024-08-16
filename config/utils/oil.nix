@@ -4,8 +4,8 @@
     settings = {
       useDefaultKeymaps = true;
       deleteToTrash = true;
-      viewOptions = {
-        showHidden = true;
+      view_options = {
+        show_hidden = true;
       };
       preview = {
         border = "rounded";
