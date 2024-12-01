@@ -13,6 +13,8 @@
     ./completion/cmp.nix
     ./completion/copilot.nix
     ./completion/lspkind.nix
+    ./completion/codeium.nix
+    ./completion/codecompanion.nix
 
     ./dap/dap.nix
 
@@ -69,5 +71,6 @@
     ./utils/toggleterm.nix
     ./utils/undotree.nix
     ./utils/whichkey.nix
+    ./utils/render-markdown.nix
   ];
 }
