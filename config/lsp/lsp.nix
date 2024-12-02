@@ -24,6 +24,7 @@
         csharp-ls.enable = true; # C#
         yamlls.enable = true; # YAML
         gopls.enable = true; #go
+        biome.enable = true; # biome js
         lua-ls = {
           # Lua
           enable = true;

@@ -3,17 +3,17 @@
     enable = true;
     notifyOnError = true;
     formattersByFt = {
-      html = [["prettierd" "prettier"]];
-      css = [["prettierd" "prettier"]];
-      javascript = [["prettierd" "prettier"]];
-      javascriptreact = [["prettierd" "prettier"]];
-      typescript = [["prettierd" "prettier"]];
-      typescriptreact = [["prettierd" "prettier"]];
+      html = [["biome"]];
+      css = [["biome"]];
+      javascript = [["biome"]];
+      javascriptreact = [["biome"]];
+      typescript = [["biome"]];
+      typescriptreact = [["biome"]];
       java = ["google-java-format"];
       python = ["black"];
       lua = ["stylua"];
       nix = ["alejandra"];
-      markdown = [["prettierd" "prettier"]];
+      markdown = [["biome"]];
       rust = ["rustfmt"];
     };
   };
