@@ -22,7 +22,7 @@
     ./git/gitsigns.nix
     ./git/diffview.nix
     ./git/lazygit.nix
-    # ./git/neogit.nix
+    ./git/neogit.nix
 
     ./languages/nvim-lint.nix
     ./languages/treesitter/treesitter.nix
@@ -68,7 +68,6 @@
     ./utils/project-nvim.nix
     ./utils/tmux-navigator.nix
     ./utils/todo-comments.nix
-    ./utils/toggleterm.nix
     ./utils/undotree.nix
     ./utils/whichkey.nix
     ./utils/render-markdown.nix

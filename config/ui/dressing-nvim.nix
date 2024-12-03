@@ -56,12 +56,12 @@
           i = {
             ["<C-c>"] = "Close",
             ["<CR>"] = "Confirm",
-            ["<Up>"] = "HistoryPrev",
-            ["<Down>"] = "HistoryNext",
+            ["<C-p>"] = "HistoryPrev",
+            ["<C-n>"] = "HistoryNext",
           },
         },
 
-        override = function(conf)
+        overridef = function(conf)
           -- This is the config that will be passed to nvim_open_win.
           -- Change values here to customize the layout
           return conf

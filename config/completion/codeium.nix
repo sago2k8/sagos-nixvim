@@ -1,5 +1,8 @@
 {
   plugins.codeium-vim = {
-    enable = true;
+    enable = false;
+    settings = {
+      enable_cmp_source = true;
+    };
   };
 }

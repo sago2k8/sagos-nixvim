@@ -15,6 +15,16 @@
   ];
 
   extraConfigLua = ''
-    require("codecompanion").setup()
+    require("codecompanion").setup({
+    adapters = {
+      openai = function()
+        return require("codecompanion.adapters").extend("openai", {
+          env = {
+            api_key = "cmd:pass local/chatGPT",
+          },
+        })
+      end,
+    },
+    })
   '';
 }
