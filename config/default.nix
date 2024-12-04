@@ -15,6 +15,7 @@
     ./completion/lspkind.nix
     ./completion/codeium.nix
     ./completion/codecompanion.nix
+    ./completion/avante.nix
 
     ./dap/dap.nix
 
