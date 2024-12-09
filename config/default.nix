@@ -1,6 +1,7 @@
 {
   # Import all your configuration modules here
   imports = [
+    ./performance.nix
     ./sets.nix
     ./keymaps.nix
 

@@ -3,7 +3,7 @@
   extraPlugins = with pkgs.vimPlugins; [
     # Add codecompletion.nvim as a plugin
     (pkgs.vimUtils.buildVimPlugin {
-      pname = "codecompletion.nvim";
+      pname = "codecompanion.nvim";
       version = "v1.2.3"; # Replace with the version you want to use
       src = pkgs.fetchFromGitHub {
         owner = "olimorris";
