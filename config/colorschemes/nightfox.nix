@@ -1,7 +1,7 @@
 {
   colorschemes = {
     nightfox = {
-      enable = true;
+      enable = false;
     };
   };
 }
