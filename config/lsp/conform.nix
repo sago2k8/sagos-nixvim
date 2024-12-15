@@ -1,20 +1,22 @@
 {
   plugins.conform-nvim = {
     enable = true;
-    notifyOnError = true;
-    formattersByFt = {
-      html = [["biome"]];
-      css = [["biome"]];
-      javascript = [["biome"]];
-      javascriptreact = [["biome"]];
-      typescript = [["biome"]];
-      typescriptreact = [["biome"]];
-      java = ["google-java-format"];
-      python = ["black"];
-      lua = ["stylua"];
-      nix = ["alejandra"];
-      markdown = [["biome"]];
-      rust = ["rustfmt"];
+    settings = {
+      notifyOnError = true;
+      formattersByFt = {
+        html = [["biome"]];
+        css = [["biome"]];
+        javascript = [["biome"]];
+        javascriptreact = [["biome"]];
+        typescript = [["biome"]];
+        typescriptreact = [["biome"]];
+        java = ["google-java-format"];
+        python = ["black"];
+        lua = ["stylua"];
+        nix = ["alejandra"];
+        markdown = [["biome"]];
+        rust = ["rustfmt"];
+      };
     };
   };
 

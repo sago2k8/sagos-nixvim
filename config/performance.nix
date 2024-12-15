@@ -6,6 +6,9 @@
       "conform.nvim"
       "oil.nvim"
       "mini.nvim"
+      "copilot.lua"
+      "nvim-treesitter"
+      "treesitter"
     ];
   };
 }

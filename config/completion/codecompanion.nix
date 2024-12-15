@@ -1,5 +1,5 @@
 # config/completion/codecompletion.nix
-{pkgs, ...}: {
+{ pkgs, ... }: {
   extraPlugins = with pkgs.vimPlugins; [
     # Add codecompletion.nvim as a plugin
     (pkgs.vimUtils.buildVimPlugin {

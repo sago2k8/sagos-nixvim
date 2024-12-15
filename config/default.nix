@@ -15,8 +15,6 @@
     ./completion/copilot.nix
     ./completion/lspkind.nix
     ./completion/codeium.nix
-    ./completion/codecompanion.nix
-    ./completion/avante.nix
 
     ./dap/dap.nix
 
@@ -53,6 +51,7 @@
     ./ui/noice.nix
     ./ui/nvim-notify.nix
     ./ui/nui.nix
+    ./ui/web-devicons.nix
 
     ./utils/better-escape.nix
     ./utils/hardtime.nix
@@ -73,5 +72,7 @@
     ./utils/undotree.nix
     ./utils/whichkey.nix
     ./utils/render-markdown.nix
+
+    ./completion/avante.nix
   ];
 }

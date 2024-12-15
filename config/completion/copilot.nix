@@ -1,6 +1,7 @@
-{
+{pkgs, ...}: {
   plugins.copilot-lua = {
     enable = true;
+    package = pkgs.vimPlugins.dressing-nvim;
     panel = {
       enabled = false;
       autoRefresh = true;
@@ -40,7 +41,7 @@
       cvs = false;
       "." = false;
     };
-    copilotNodeCommand = "node"; # Node.js version must be > 18.x
+    copilotNodeCommand = "${pkgs.nodejs_20}/bin/node"; # Node.js version must be > 18.x
     serverOptsOverrides = {};
   };
 }

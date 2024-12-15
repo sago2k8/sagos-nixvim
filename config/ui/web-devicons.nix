@@ -1,5 +1,5 @@
 {
-  plugins.codeium-nvim = {
+  plugins.web-devicons = {
     enable = true;
   };
 }
