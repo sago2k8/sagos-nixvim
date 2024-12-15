@@ -15,25 +15,25 @@
     {
       mode = "n";
       key = "<leader>xx";
-      action = "<cmd>TroubleToggle<cr>";
+      action = "<cmd>Trouble diagnostics toggle<cr>";
       options = {
         silent = true;
-        desc = "Document Diagnostics (Trouble)";
+        desc = "Diagnostics (Trouble)";
       };
     }
     {
       mode = "n";
       key = "<leader>xX";
-      action = "<cmd>TroubleToggle workspace_diagnostics<cr>";
+      action = "<cmd>Trouble diagnostics toggle filter.buf=0<cr>";
       options = {
         silent = true;
-        desc = "Workspace Diagnostics (Trouble)";
+        desc = "Buffer Diagnostics (Trouble)";
       };
     }
     {
       mode = "n";
       key = "<leader>xt";
-      action = "<cmd>TroubleToggle todo<cr>";
+      action = "<cmd>Trouble todo toggle<cr>";
       options = {
         silent = true;
         desc = "Todo (Trouble)";
@@ -41,11 +41,47 @@
     }
     {
       mode = "n";
+      key = "<leader>xT";
+      action = "<cmd>Trouble todo toggle filter.buf=0<cr>";
+      options = {
+        silent = true;
+        desc = "Buffer Todo (Trouble)";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>xQ";
-      action = "<cmd>TodoQuickFix<cr>";
+      action = "<cmd>Trouble qflist toggle<cr>";
       options = {
         silent = true;
         desc = "Quickfix List (Trouble)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>xL";
+      action = "<cmd>Trouble loclist toggle<cr>";
+      options = {
+        silent = true;
+        desc = "Location List (Trouble)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>cl";
+      action = "<cmd>Trouble lsp toggle focus=false win.position=right<cr>";
+      options = {
+        silent = true;
+        desc = "LSP Definitions / references / ... (Trouble)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>cs";
+      action = "<cmd>Trouble symbols toggle focus=false<cr>";
+      options = {
+        silent = true;
+        desc = "Symbols (Trouble)";
       };
     }
   ];
