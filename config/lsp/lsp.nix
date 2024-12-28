@@ -21,7 +21,7 @@
         dockerls.enable = true; # Docker
         bashls.enable = true; # Bash
         clangd.enable = false; # C/C++
-        csharp_ls.enable = true; # C#
+        csharp_ls.enable = false; # C#
         yamlls.enable = true; # YAML
         gopls.enable = true; #go
         biome.enable = true; # biome js
