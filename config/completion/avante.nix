@@ -3,7 +3,7 @@
     enable = true;
 
     settings = {
-      provider = "openai";
+      provider = "claude";
       hints = {
         enabled = true;
       };
@@ -13,6 +13,9 @@
       };
       openai = {
         api_key_name = "cmd:pass local/chatGPT";
+      };
+      claude = {
+        api_key_name = "cmd:pass local/claude";
       };
     };
   };
