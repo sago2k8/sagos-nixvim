@@ -1,8 +1,12 @@
 {
   plugins.render-markdown = {
-    enable = true;
+    enable = false;
     settings = {
       file_types = [
+        "markdown"
+        "Avante"
+      ];
+      ft = [
         "markdown"
         "Avante"
       ];

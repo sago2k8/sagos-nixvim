@@ -71,8 +71,10 @@
     ./utils/todo-comments.nix
     ./utils/undotree.nix
     ./utils/whichkey.nix
-    ./utils/render-markdown.nix
 
-    ./completion/avante.nix
+    ./completion/codecompanion.nix
+    # ./utils/render-markdown.nix
+
+    # ./completion/avante.nix
   ];
 }
