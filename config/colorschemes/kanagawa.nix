@@ -3,7 +3,7 @@
     kanagawa = {
       enable = true;
       settings = {
-        theme = "dragon";
+        theme = "kanagawa-dragon";
         terminalColors = true;
         colors = {
           theme = {
