@@ -1,44 +1,47 @@
 {
-  plugins.dap = {
-    enable = true;
-    signs = {
-      dapBreakpoint = {
-        text = "●";
-        texthl = "DapBreakpoint";
-      };
-      dapBreakpointCondition = {
-        text = "●";
-        texthl = "DapBreakpointCondition";
-      };
-      dapLogPoint = {
-        text = "◆";
-        texthl = "DapLogPoint";
-      };
-    };
-    extensions = {
-      dap-python = {
-        enable = true;
-      };
-      dap-ui = {
-        enable = true;
+  plugins = {
+    dap-ui = {
+      enable = true;
+      settings = {
         floating.mappings = {
-          close = ["<ESC>" "q"];
+          close = [ "<ESC>" "q" ];
         };
       };
-      dap-virtual-text = {
-        enable = true;
-      };
     };
-    configurations = {
-      java = [
-        {
-          type = "java";
-          request = "launch";
-          name = "Debug (Attach) - Remote";
-          hostName = "127.0.0.1";
-          port = 5005;
-        }
-      ];
+    dap-python = {
+      enable = true;
+    };
+
+    dap-virtual-text = {
+      enable = true;
+    };
+    dap = {
+      enable = true;
+      signs = {
+        dapBreakpoint = {
+          text = "●";
+          texthl = "DapBreakpoint";
+        };
+        dapBreakpointCondition = {
+          text = "●";
+          texthl = "DapBreakpointCondition";
+        };
+        dapLogPoint = {
+          text = "◆";
+          texthl = "DapLogPoint";
+        };
+      };
+      configurations = {
+        java = [
+          {
+            type = "java";
+            request = "launch";
+            name = "Debug (Attach) - Remote";
+            hostName = "127.0.0.1";
+            port = 5005;
+          }
+        ];
+      };
     };
   };
 
@@ -210,7 +213,7 @@
       };
     }
     {
-      mode = ["n" "v"];
+      mode = [ "n" "v" ];
       key = "<leader>de";
       action = "<cmd>lua require('dapui').eval()<cr>";
       options = {

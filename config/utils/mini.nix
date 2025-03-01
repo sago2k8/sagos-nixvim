@@ -11,7 +11,11 @@
       };
       pick = { };
       cursorword = { };
-      diff = { };
+      diff = {
+        view = {
+          style = "number";
+        };
+      };
       # Better Around/Inside textobjects
       #
       # Examples:

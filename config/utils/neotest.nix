@@ -1,38 +1,24 @@
-{ pkgs, ... }: {
-  extraPlugins = with pkgs.vimPlugins; [
-    (pkgs.vimUtils.buildVimPlugin {
-      pname = "neotest-vim-test";
-      version = "2023-04-17";
-      src = pkgs.fetchFromGitHub {
-        owner = "nvim-neotest";
-        repo = "neotest-vim-test";
-        rev = "75c4228882ae4883b11bfce9b8383e637eb44192";
-        sha256 = "12ix1lzmqlk3iyngaafby9c02fcl9d5iva965miwxfljvmibjnbw";
+{
+  plugins.neotest = {
+    enable = true;
+
+    settings = {
+      output = {
+        enabled = true;
+        open_on_run = true;
       };
-    })
-    neotest
-    FixCursorHold-nvim
-    neotest-plenary
-    vim-test
-    neotest-python
-    neotest-vitest
-    neotest-go
-  ];
-  extraConfigLua = ''
-    require("neotest").setup({
-      adapters = {
-        require("neotest-go"),
-        require("neotest-python")({
-          dap = { justMyCode = false },
-        }),
-        require "neotest-vim-test" {
-          ignore_file_types = { "python", "java", "vim", "lua", "javascript", "typescript" },
-        },
-      },
-      output = { enabled = true, open_on_run = true },
-      summary = { enabled = true, },
-    })
-  '';
+      summary = {
+        enabled = true;
+      };
+    };
+    adapters = {
+      go.enable = true;
+      python.enable = true;
+      vitest.enable = true;
+      jest.enable = true;
+    };
+  };
+
   keymaps = [
     {
       mode = "n";

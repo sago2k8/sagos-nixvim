@@ -1,14 +1,14 @@
 {
   plugins.render-markdown = {
-    enable = false;
+    enable = true;
     settings = {
       file_types = [
         "markdown"
-        "Avante"
+        "codecompanion"
       ];
       ft = [
         "markdown"
-        "Avante"
+        "codecompanion"
       ];
     };
   };
